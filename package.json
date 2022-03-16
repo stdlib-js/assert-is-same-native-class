@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-same-native-class",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Test if two arguments have the same native class.",
   "license": "Apache-2.0",
   "author": {
