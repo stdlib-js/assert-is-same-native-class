@@ -1,0 +1,52 @@
+{
+  "name": "@stdlib/assert-is-same-native-class",
+  "version": "0.0.0",
+  "description": "Test if two arguments have the same native class.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/assert-is-same-native-class.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdassert",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "equal",
+    "same",
+    "is",
+    "issame",
+    "typeof",
+    "type",
+    "native",
+    "class",
+    "classification",
+    "specification",
+    "spec",
+    "ecmascript",
+    "ecma",
+    "internal",
+    "tostring",
+    "object",
+    "built-in",
+    "builtin",
+    "check",
+    "valid",
+    "validate",
+    "test"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
