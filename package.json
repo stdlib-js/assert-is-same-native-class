@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-same-native-class",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Test if two arguments have the same native class.",
   "license": "Apache-2.0",
   "author": {
@@ -37,12 +37,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-native-class": "^0.0.8"
+    "@stdlib/utils-native-class": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.0.8",
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/number-ctor": "^0.0.7",
+    "@stdlib/bench": "^0.1.0",
+    "@stdlib/number-ctor": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
