@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-same-native-class",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test if two arguments have the same native class.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-native-class": "^0.1.0"
+    "@stdlib/utils-native-class": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.1.0",
