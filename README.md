@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if two arguments have the same native class.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-same-native-class
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@esm/index.mjs';
+var isSameNativeClass = require( '@stdlib/assert-is-same-native-class' );
 ```
 
 #### isSameNativeClass( a, b )
@@ -73,13 +89,8 @@ bool = isSameNativeClass( [], {} );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@esm/index.mjs';
+```javascript
+var isSameNativeClass = require( '@stdlib/assert-is-same-native-class' );
 
 var bool = isSameNativeClass( 3.14, new Number( 3.14 ) );
 // returns true
@@ -95,10 +106,6 @@ bool = isSameNativeClass( [], {} );
 
 bool = isSameNativeClass( null, void 0 );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -122,7 +129,7 @@ bool = isSameNativeClass( null, void 0 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -152,8 +159,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-same-native-class.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-same-native-class
 
-[test-image]: https://github.com/stdlib-js/assert-is-same-native-class/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/assert-is-same-native-class/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/assert-is-same-native-class/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/assert-is-same-native-class/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-same-native-class/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-same-native-class?branch=main
@@ -182,7 +189,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-native-class/main/LICENSE
 
-[@stdlib/utils/native-class]: https://github.com/stdlib-js/stdlib/tree/develop/tree/esm
+[@stdlib/utils/native-class]: https://github.com/stdlib-js/stdlib/tree/develop
 
 <!-- <related-links> -->
 
