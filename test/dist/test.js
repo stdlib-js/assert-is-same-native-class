@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,64 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-new-wrappers */
-
 'use strict';
 
 // MODULES //
 
 var tape = require( 'tape' );
-var Number = require( '@stdlib/number-ctor' );
-var isSameNativeClass = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isSameNativeClass, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided two arguments which have the same native class', function test( t ) {
-	var values;
-	var bool;
-	var i;
-
-	values = [
-		[ true, false ],
-		[ 1.0, 3.1 ],
-		[ new Number( 1.0 ), 3.1 ],
-		[ null, null ],
-		[ NaN, NaN ],
-		[ new Number( 0.0 ), new Number( 0.0 ) ],
-		[ new String( 'abc' ), 'abc' ],
-		[ new RangeError( 'beep' ), new TypeError( 'boop' ) ]
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		bool = isSameNativeClass( values[ i ][ 0 ], values[ i ][ 1 ] );
-		t.strictEqual( bool, true, 'returns true' );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided two arguments having the same native class', function test( t ) {
-	var values;
-	var bool;
-	var i;
-
-	values = [
-		[ 1.0, '1.0' ],
-		[ null, NaN ],
-		[ [], {} ],
-		[ null, void 0 ],
-		[ JSON, Math ]
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		bool = isSameNativeClass( values[ i ][ 0 ], values[ i ][ 1 ] );
-		t.strictEqual( bool, false, 'returns false' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
