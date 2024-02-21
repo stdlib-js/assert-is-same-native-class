@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@esm/index.mjs';
+import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@v0.2.1-esm/index.mjs';
 ```
 
 #### isSameNativeClass( a, b )
@@ -82,7 +82,7 @@ bool = isSameNativeClass( [], {} );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@esm/index.mjs';
+import isSameNativeClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@v0.2.1-esm/index.mjs';
 
 var bool = isSameNativeClass( 3.14, new Number( 3.14 ) );
 // returns true
