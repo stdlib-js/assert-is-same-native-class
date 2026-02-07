@@ -35,32 +35,38 @@ limitations under the License.
 
 > Test if two arguments have the same native class.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-same-native-class
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isSameNativeClass = require( '@stdlib/assert-is-same-native-class' );
+isSameNativeClass = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isSameNativeClass = require( 'path/to/vendor/umd/assert-is-same-native-class/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isSameNativeClass;
+})();
+</script>
 ```
 
 #### isSameNativeClass( a, b )
@@ -93,9 +99,14 @@ bool = isSameNativeClass( [], {} );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Number = require( '@stdlib/number-ctor' );
-var isSameNativeClass = require( '@stdlib/assert-is-same-native-class' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-native-class@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isSameNativeClass( 3.14, new Number( 3.14 ) );
 // returns true
@@ -111,6 +122,11 @@ bool = isSameNativeClass( [], {} );
 
 bool = isSameNativeClass( null, void 0 );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -205,15 +221,15 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-native-class/main/LICENSE
 
-[@stdlib/utils/native-class]: https://github.com/stdlib-js/utils-native-class
+[@stdlib/utils/native-class]: https://github.com/stdlib-js/utils-native-class/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-same-type]: https://github.com/stdlib-js/assert-is-same-type
+[@stdlib/assert/is-same-type]: https://github.com/stdlib-js/assert-is-same-type/tree/umd
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/umd
 
-[@stdlib/assert/is-strict-equal]: https://github.com/stdlib-js/assert-is-strict-equal
+[@stdlib/assert/is-strict-equal]: https://github.com/stdlib-js/assert-is-strict-equal/tree/umd
 
 <!-- </related-links> -->
 
